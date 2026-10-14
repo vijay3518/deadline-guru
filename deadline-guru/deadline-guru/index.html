@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deadline Guru – From idea to submission</title>
+<meta name="description" content="Deadline Guru helps students plan, write and submit assignments and projects on time.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a href="#top" class="brand"><img src="assets/logo.png" alt="Deadline Guru – from idea to submission"></a>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="btn small">Get started</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Your deadline is closer than you think. Your finish line is closer too.</h1>
+      <p>Deadline Guru turns a vague assignment into a clear plan, a solid draft and a submission you're proud of.</p>
+      <div class="cta">
+        <a href="#contact" class="btn">Plan my deadline</a>
+        <a href="#how" class="link">See how it works</a>
+      </div>
+    </div>
+
+    <div class="clock-card" aria-label="Deadline countdown">
+      <div class="clock-top">
+        <img src="assets/icon.png" alt="" width="56" height="56">
+        <label for="due">When is it due?
+          <input type="datetime-local" id="due">
+        </label>
+      </div>
+      <div class="count" id="count" aria-live="polite">
+        <div><b id="d">--</b><span>days</span></div>
+        <div><b id="h">--</b><span>hours</span></div>
+        <div><b id="m">--</b><span>min</span></div>
+        <div><b id="s">--</b><span>sec</span></div>
+      </div>
+      <p class="hint" id="hint">Pick a date to start the countdown.</p>
+      <div class="bar"><i id="fill"></i></div>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <h2>From idea to submission in four steps</h2>
+    <ol>
+      <li><h3>Share the brief</h3><p>Send the assignment, the due date and any marking rubric.</p></li>
+      <li><h3>Get a plan</h3><p>We split the work into daily milestones that fit your schedule.</p></li>
+      <li><h3>Build the draft</h3><p>Outline, research and writing support, with feedback along the way.</p></li>
+      <li><h3>Submit with confidence</h3><p>Final proofread and formatting check before you hit send.</p></li>
+    </ol>
+  </section>
+
+  <section id="services" class="services">
+    <h2>What we help with</h2>
+    <div class="grid">
+      <article><h3>Assignments & essays</h3><p>Structure, clarity and citations.</p></article>
+      <article><h3>Projects & reports</h3><p>Scoping, timelines and clean write-ups.</p></article>
+      <article><h3>Presentations</h3><p>Slides that tell a clear story.</p></article>
+      <article><h3>Proofreading</h3><p>Grammar, flow and formatting, checked.</p></article>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div>
+      <h2>Tell us what's due</h2>
+      <p>Send the details and we'll reply with a plan.</p>
+    </div>
+    <form id="form">
+      <input name="name" placeholder="Your name" required>
+      <input name="email" type="email" placeholder="Email address" required>
+      <textarea name="msg" rows="4" placeholder="What is the task and when is it due?" required></textarea>
+      <button class="btn" type="submit">Send request</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <img src="assets/icon.png" alt="" width="32" height="32">
+  <span>© <span id="yr"></span> Deadline Guru. From idea to submission.</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
