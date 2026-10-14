@@ -1,0 +1,16 @@
+import Link from "next/link";
+import { ArrowRight, Compass, Target, HeartHandshake, CheckCircle2 } from "lucide-react";
+
+export const metadata = { title: "About Us | Deadline Guru", description: "Learn about Deadline Guru and our approach to academic guidance." };
+
+export default function AboutPage() {
+  return (
+    <>
+      <section className="page-hero"><div className="container"><span className="eyebrow"><span className="eyebrow-dot" /> ABOUT DEADLINE GURU</span><h1>From idea to submission.<br /><span>With a clearer path.</span></h1><p>We help students approach academic tasks with more structure, confidence, and clarity.</p></div></section>
+      <section className="section"><div className="container about-grid"><div><span className="eyebrow">WHO WE ARE</span><h2>Academic support that starts with <span>understanding.</span></h2></div><div className="about-prose"><p>Deadline Guru is an academic support service for students working on assignments, dissertations, and final-year projects. We focus on understanding each brief, organising the work, and offering guidance that helps students make informed progress.</p><p>Whether you are choosing a topic, planning your research, structuring a report, or preparing a project presentation, our aim is to make the process easier to navigate.</p><p className="small-note">Our support is intended to complement your learning. Students remain responsible for their own submissions and for following their institution’s academic-integrity policies.</p></div></div></section>
+      <section className="section values-section"><div className="container"><div className="section-heading"><span className="eyebrow">WHAT GUIDES US</span><h2>Simple principles.<br /><span>Meaningful support.</span></h2></div><div className="value-grid"><article className="value-card"><span className="value-icon"><Target size={24} /></span><h3>Understand the brief</h3><p>Start by clarifying the task, learning outcomes, expectations, and deadline.</p></article><article className="value-card"><span className="value-icon"><Compass size={24} /></span><h3>Find the direction</h3><p>Break a large task into manageable steps and a practical plan.</p></article><article className="value-card"><span className="value-icon"><HeartHandshake size={24} /></span><h3>Support your progress</h3><p>Get respectful, responsive guidance throughout the process.</p></article></div></div></section>
+      <section className="section"><div className="container promise-panel"><div><span className="eyebrow">OUR COMMITMENT</span><h2>Support that keeps <span>your goals in focus.</span></h2></div><ul><li><CheckCircle2 size={18} /> Clear communication</li><li><CheckCircle2 size={18} /> Guidance tailored to your brief</li><li><CheckCircle2 size={18} /> Respect for academic integrity</li><li><CheckCircle2 size={18} /> Deadline-aware planning</li></ul></div></section>
+      <section className="cta-section"><div className="container cta-inner"><div><span className="eyebrow eyebrow-light">LET’S CONNECT</span><h2>Tell us what you’re<br />working towards.</h2><p>We’ll help you explore the next steps for your academic task.</p></div><Link className="button button-white" href="/contact">Contact us <ArrowRight size={18} /></Link><div className="cta-decoration">DG</div></div></section>
+    </>
+  );
+}
